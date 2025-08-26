@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxe Silver - Premium AI-Powered Jewelry</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="header__logo">
+                    <h1 class="logo">Luxe Silver</h1>
+                </div>
+                <nav class="header__nav">
+                    <a href="#shop" class="nav-link">Shop</a>
+                    <a href="#collections" class="nav-link">Collections</a>
+                    <a href="#ai-design" class="nav-link">AI Design</a>
+                    <a href="#about" class="nav-link">About</a>
+                </nav>
+                <div class="header__actions">
+                    <div class="search-container">
+                        <input type="search" placeholder="Search jewelry..." class="search-input">
+                        <button class="search-btn">🔍</button>
+                    </div>
+                    <button class="cart-btn">
+                        🛒 <span class="cart-count">0</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero__content">
+                <div class="hero__text">
+                    <h1 class="hero__title">Discover AI-Crafted Silver Jewelry</h1>
+                    <p class="hero__subtitle">Experience the future of jewelry with our AI-powered design studio and virtual try-on technology</p>
+                    <div class="hero__buttons">
+                        <button class="btn btn--primary btn--lg">Shop Now</button>
+                        <button class="btn btn--outline btn--lg" id="ai-designer-btn">Try AI Designer</button>
+                    </div>
+                </div>
+                <div class="hero__features">
+                    <div class="hero__feature">
+                        <div class="feature-icon">✨</div>
+                        <span>AI-Powered Designs</span>
+                    </div>
+                    <div class="hero__feature">
+                        <div class="feature-icon">👁️</div>
+                        <span>Virtual Try-On</span>
+                    </div>
+                    <div class="hero__feature">
+                        <div class="feature-icon">🛡️</div>
+                        <span>925 Sterling Silver</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collections Section -->
+    <section id="collections" class="collections">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Collections</h2>
+                <p class="section-subtitle">Discover our curated selection of premium silver jewelry</p>
+            </div>
+            <div class="collections__grid" id="collections-grid">
+                <!-- Collections will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Features Section -->
+    <section id="ai-design" class="ai-features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">AI-Powered Features</h2>
+                <p class="section-subtitle">Experience jewelry shopping reimagined with artificial intelligence</p>
+            </div>
+            <div class="ai-features__grid" id="ai-features-grid">
+                <!-- AI features will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="shop" class="products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Products</h2>
+                <p class="section-subtitle">Handpicked selections from our premium collection</p>
+            </div>
+            <div class="products__filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="Rings">Rings</button>
+                <button class="filter-btn" data-filter="Necklaces">Necklaces</button>
+                <button class="filter-btn" data-filter="Bracelets">Bracelets</button>
+                <button class="filter-btn" data-filter="Earrings">Earrings</button>
+            </div>
+            <div class="products__grid" id="products-grid">
+                <!-- Products will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Indicators -->
+    <section class="trust-indicators">
+        <div class="container">
+            <div class="trust-indicators__grid" id="trust-indicators-grid">
+                <!-- Trust indicators will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Customers Say</h2>
+                <p class="section-subtitle">Real experiences from jewelry lovers worldwide</p>
+            </div>
+            <div class="testimonials__grid" id="testimonials-grid">
+                <!-- Testimonials will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3 class="footer__title">Luxe Silver</h3>
+                    <p class="footer__text">Premium AI-powered silver jewelry crafted with passion and precision.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">📷</a>
+                        <a href="#" class="social-link">🐦</a>
+                    </div>
+                </div>
+                <div class="footer__section">
+                    <h4 class="footer__subtitle">Shop</h4>
+                    <ul class="footer__links">
+                        <li><a href="#">Rings</a></li>
+                        <li><a href="#">Necklaces</a></li>
+                        <li><a href="#">Bracelets</a></li>
+                        <li><a href="#">Earrings</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h4 class="footer__subtitle">AI Features</h4>
+                    <ul class="footer__links">
+                        <li><a href="#" id="virtual-tryon-btn">Virtual Try-On</a></li>
+                        <li><a href="#" id="ai-designer-footer-btn">AI Designer</a></li>
+                        <li><a href="#">Smart Recommendations</a></li>
+                        <li><a href="#" id="ai-chat-btn">AI Assistant</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h4 class="footer__subtitle">Customer Care</h4>
+                    <ul class="footer__links">
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2025 Luxe Silver. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <!-- AI Designer Modal -->
+    <div class="modal hidden" id="ai-designer-modal">
+        <div class="modal__backdrop"></div>
+        <div class="modal__content">
+            <div class="modal__header">
+                <h3>AI Jewelry Designer</h3>
+                <button class="modal__close">&times;</button>
+            </div>
+            <div class="modal__body">
+                <p>Describe your dream jewelry and our AI will create a unique design for you:</p>
+                <textarea class="form-control" placeholder="E.g., elegant silver ring with moonstone for special occasions..." rows="4" id="design-description"></textarea>
+                <div class="design-options">
+                    <label class="form-label">Style Preference:</label>
+                    <select class="form-control" id="design-style">
+                        <option value="classic">Classic</option>
+                        <option value="modern">Modern</option>
+                        <option value="vintage">Vintage</option>
+                        <option value="bohemian">Bohemian</option>
+                    </select>
+                </div>
+                <button class="btn btn--primary btn--full-width" id="generate-design">Generate Design</button>
+                <div class="design-result hidden" id="design-result">
+                    <h4>Your Custom Design:</h4>
+                    <div class="design-preview">
+                        <div class="design-placeholder">AI-Generated Design Preview</div>
+                        <p id="design-feedback">Based on your description, we've created this unique piece...</p>
+                        <button class="btn btn--primary">Add to Cart - $299</button>
+                        <button class="btn btn--outline">Modify Design</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Virtual Try-On Modal -->
+    <div class="modal hidden" id="virtual-tryon-modal">
+        <div class="modal__backdrop"></div>
+        <div class="modal__content">
+            <div class="modal__header">
+                <h3>Virtual Try-On</h3>
+                <button class="modal__close">&times;</button>
+            </div>
+            <div class="modal__body">
+                <p>Upload your photo or use your camera to see how jewelry looks on you:</p>
+                <div class="tryon-options">
+                    <button class="btn btn--outline">📷 Use Camera</button>
+                    <button class="btn btn--outline">📁 Upload Photo</button>
+                </div>
+                <div class="tryon-result">
+                    <div class="tryon-placeholder">Virtual Try-On Preview will appear here</div>
+                    <p>Select a jewelry piece to try on:</p>
+                    <div class="product-selector">
+                        <div class="product-option">Moonstone Ring</div>
+                        <div class="product-option">Infinity Necklace</div>
+                        <div class="product-option">Chain Bracelet</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- AI Chat Modal -->
+    <div class="modal hidden" id="ai-chat-modal">
+        <div class="modal__backdrop"></div>
+        <div class="modal__content">
+            <div class="modal__header">
+                <h3>AI Style Assistant</h3>
+                <button class="modal__close">&times;</button>
+            </div>
+            <div class="modal__body">
+                <div class="chat-container">
+                    <div class="chat-messages" id="chat-messages">
+                        <div class="message ai-message">
+                            <strong>AI Assistant:</strong> Hello! I'm here to help you find the perfect jewelry. What are you looking for today?
+                        </div>
+                    </div>
+                    <div class="chat-input-container">
+                        <input type="text" class="form-control" placeholder="Ask me about jewelry, styles, or occasions..." id="chat-input">
+                        <button class="btn btn--primary" id="send-chat">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Shopping Cart Modal -->
+    <div class="modal hidden" id="cart-modal">
+        <div class="modal__backdrop"></div>
+        <div class="modal__content">
+            <div class="modal__header">
+                <h3>Shopping Cart</h3>
+                <button class="modal__close">&times;</button>
+            </div>
+            <div class="modal__body">
+                <div class="cart-items" id="cart-items">
+                    <!-- Cart items will be populated by JavaScript -->
+                </div>
+                <div class="cart-total">
+                    <div class="total-row">
+                        <span>Subtotal: $<span id="cart-subtotal">0</span></span>
+                    </div>
+                    <div class="total-row">
+                        <span>Shipping: Free</span>
+                    </div>
+                    <div class="total-row total-final">
+                        <strong>Total: $<span id="cart-total">0</span></strong>
+                    </div>
+                </div>
+                <button class="btn btn--primary btn--full-width" id="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
